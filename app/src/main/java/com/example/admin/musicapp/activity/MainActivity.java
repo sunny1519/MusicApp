@@ -24,12 +24,11 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import com.example.admin.musicapp.*;
-import com.example.admin.musicapp.activity.*;
 import com.example.admin.musicapp.fragment.HomeFragment;
-import com.example.admin.musicapp.fragment.MoviesFragment;
-import com.example.admin.musicapp.fragment.NotificationsFragment;
-import com.example.admin.musicapp.fragment.PhotosFragment;
-import com.example.admin.musicapp.fragment.SettingsFragment;
+import com.example.admin.musicapp.fragment.LatestFragment;
+import com.example.admin.musicapp.fragment.SuperhitFragment;
+import com.example.admin.musicapp.fragment.TrendingFragment;
+import com.example.admin.musicapp.fragment.NewReleasesFragment;
 import com.example.admin.musicapp.other.CircleTransform;
 
 
@@ -202,21 +201,21 @@ public class MainActivity extends AppCompatActivity {
                 return homeFragment;
             case 1:
                 // photos
-                PhotosFragment photosFragment = new PhotosFragment();
-                return photosFragment;
+                TrendingFragment trendingFragment = new TrendingFragment();
+                return trendingFragment;
             case 2:
                 // movies fragment
-                MoviesFragment moviesFragment = new MoviesFragment();
-                return moviesFragment;
+                LatestFragment latestFragment = new LatestFragment();
+                return latestFragment;
             case 3:
                 // notifications fragment
-                NotificationsFragment notificationsFragment = new NotificationsFragment();
-                return notificationsFragment;
+                SuperhitFragment superhitFragment = new SuperhitFragment();
+                return superhitFragment;
 
             case 4:
                 // settings fragment
-                SettingsFragment settingsFragment = new SettingsFragment();
-                return settingsFragment;
+                NewReleasesFragment newReleasesFragment = new NewReleasesFragment();
+                return newReleasesFragment;
             default:
                 return new HomeFragment();
         }
